@@ -1,19 +1,24 @@
-*   {
+ *  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-section {
+body {
     height: 100vh;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    scroll-snap-align: start;
-    text-align: center;
+    width: 100vw;
 }
+
+.container  {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
 
 section h1  {
     font-size: 3rem;
@@ -21,21 +26,19 @@ section h1  {
 
 section p{
     font-size: 2rem;
-    margin: 0 20%;
 }
 
-.container  {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    height: 100vh;
+h1  {
+    color: #596157;
+}
+
+p   {
+    color: #52414c;
 }
 
 .navbar {
     position: fixed;
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
     background: #a5c892;
     padding: 3%;
     height: 100%;
@@ -58,7 +61,6 @@ section p{
     text-decoration: none;
     color: #596157;
 }
-/*     color: #A5c892; */
 .navbar ul li a:hover{
     color: orange;
 }
@@ -69,7 +71,6 @@ section#home    {
 
 section#about    {
     background: rgb(255, 255, 255);
-
 }
 
 section#contact  {
@@ -81,8 +82,16 @@ section#contact  {
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 14%;
-    margin-right: 12%;
+    row-gap: 10px;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.grid-child-0   {
+    grid-column: 1/2;
+    height: 100vh;
 }
 
 .grid-child-0 > img   {
@@ -93,85 +102,70 @@ section#contact  {
 
 .grid-child-1 {
     grid-column: 2/2;
-
+    margin-right: 5%;
 }
 
 .grid-child-1 h1{
-    margin-bottom: 7%;
-    margin-top: 5%;
 }
 
 .grid-child-2 {
-    grid-row: 2/3;
-    justify-self: end;
+    grid-column: 1 / span 2;
+    height: 100vh;
+    width: 100vw;
 }
 
 .grid-child-2 h1 {
-    font-size: 4rem;
     text-align: center;
-    margin-bottom: 3%;
 }
 
-h1  {
-    color: #596157;
+
+
+.hoz-container  {
+    width:100%;
+    height: 100%;
+    background-color: pink;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
 }
 
-p   {
-    color: #52414c;
-}
 
-.grid-child-3    {
-    justify-self: start;
-    margin-left: 15%;
+.hoz-section    {
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
 }
-
-.grid-child-3 li    {
-    margin: 10%;
-    color: orange;
-}
-
-.grid-child-4   {
-    grid-column: 1/3;
-}
-
-.grid-child-4 h1 {
-    margin-bottom: 4rem;
-}
-
-.contact-form   {
-    display: grid;
-    height: 30vh;
-    width: 30vw;
-    background: white;
-    margin: auto;
-    grid-template-columns: repeat(2, 1fr);
-    color: black;
-}
-
-.contact-form h1  {
+ 
+/* 
+ body   {
+    width: 100vw;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    font-size: medium;
-    color: black;
-}
+    background-color: blue;
 
-.contact-form p  {
-    margin: 0;
-    padding: 0;
-    font-size: medium;
-    color: black;
-}
+ }
+    .container  {
+        width:100%;
+        height: 100%;
+        background-color: pink;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+    }
 
-.form-grid-1    {
-    align-self: center;
-}
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+    } */
 
-.contact-form a  {
-    margin: 0;
-    padding: 0;
-    font-size: medium;
-    color: black;
-}
+
 
 
 /* Welcome animation using grid and gsap */
