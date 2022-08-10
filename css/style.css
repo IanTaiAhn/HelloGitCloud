@@ -77,7 +77,6 @@ body {
 }
 
 .grid-child-0 > img   {
-    /* grid-column: 1/2; */
     max-height: 100%;
     max-width: 100%;
 }
@@ -85,9 +84,6 @@ body {
 .grid-child-1 {
     grid-column: 3/3;
     margin-right: 5%;
-    /* border: 10px #283618; */
-    /* border-radius: 10%; */
-    
 }
 
 .grid-child-1 > h1{
@@ -96,13 +92,10 @@ body {
     font-size: 3.3em;
 }
 
-
 .grid-child-1 > p   {
     color: black;
     font-size: 1.5em;
 }
-
-
 
 .grid-child-2 {
     grid-column: 1 / span 3;
@@ -136,13 +129,11 @@ body {
 
 .work-container {
     display: flex;
-    /* width: 70vw; */
-    /* gap: 80em; */
-    align-items: flex-start;
+    justify-content: center;
+    align-items: baseline;
 }
 
 .work-child-0   {
-    align-self: flex-start;
 }
 
 .work-child-0 > a  {
@@ -154,7 +145,6 @@ body {
 }
 
 .work-child-1   {
-    align-self: flex-end;
 }
 
 .work-child-1 > a  {
@@ -166,7 +156,24 @@ body {
 }
 
 .work-child-content {
-    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 80vw;
+    height: 80vh;
+}
+
+.work-child-content > h1 > a {
+    text-decoration: none;
+}
+
+.work-child-content > h1 > a:visited {
+    color: black;    
+}
+
+.work-child-content > h1 > a:hover {
+    color: orange;    
 }
 
 /* 
