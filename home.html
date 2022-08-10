@@ -12,15 +12,16 @@
 
 <body>
     <div class="container">
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
 
-            </ul>
-          </nav>
-        <section id="#about" class="section-grid">
+        <section id="about" class="section-grid-1">
+            <nav class="navbar grid-child-01">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- Add all of my contact info here! Also include resume as a pdf download prolly -->
+                </ul>
+              </nav>
             <div class="grid-child-0">
                 <img src="img/me.JPEG">
             </div>
@@ -30,18 +31,32 @@
             </div>
         </section>
 
-        <section id="#work" class="section-grid">
+        <section id="work" class="section-grid-2">
             <div class="grid-child-2">
-                <div class="hoz-container">
-                <p>Hmm snap?</p>
-                    <section class = "hoz-section">
-                        <h1> hoz 1 man</h1>
+                <div  class="hoz-container">
+                    <section id="work-1" class = "hoz-section">
+                        <!-- Prolly do a grid child in here, and have the header uptop for works, and then slide show through -->
+                        <div class="work-container">
+                            <button class="work-child-0" type="button"><a href="#work-3"><span>&#8636;</span> </a></button>
+                            <div class="work-child-content">
+                                <h1>git hub stuff goes here</h1>
+                            </div>
+                            <button class="work-child-1" type="button"><a href="#work-2"><span>&#8640;</span></a></button>
+                        </div>
                     </section>
-                    <section class="hoz-section"> 
-                        <h1> hoz 2 man</h1>
+                    <section id="work-2" class="hoz-section"> 
+                        <!-- <h1> hoz 2 man</h1> -->
+                        <div class="work-container">
+                            <button class="work-child-0" type="button"><a href="#work-1"><span>&#8636;</span> </a></button>
+                            <button class="work-child-1" type="button"><a href="#work-3"><span>&#8640;</span></a></button>
+                        </div>
                     </section>
-                    <section class="hoz-section">
-                        <h1> hoz 3 man!</h1>
+                    <section id="work-3" class="hoz-section">
+                        <!-- <h1> hoz 3 man!</h1> -->
+                        <div class="work-container">
+                            <button class="work-child-0" type="button"><a href="#work-2"><span>&#8636;</span> </a></button>
+                            <button class="work-child-1" type="button"><a href="#work-1"><span>&#8640;</span></a></button>
+                        </div>
                     </section>
                 </div>
 
