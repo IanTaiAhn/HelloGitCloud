@@ -34,11 +34,16 @@ body {
     padding: 3%;
     list-style: none;
     text-decoration: none;
-    color: #000000;
+    color: #042A2B;
     font-size: 1.5em;
 }
 .navbar ul li a:hover{
     color: orange;
+}
+
+.nav-flex    {
+    display: flex;
+    flex-direction: column;
 }
 
 .section-grid-1   {
@@ -51,7 +56,7 @@ body {
     width: 100vw;
     text-align: center;
     scroll-snap-align: start;
-    background-color: #E3B5A4;
+    background-color: #E7D7C1;
 }
 
 .section-grid-2   {
@@ -67,7 +72,7 @@ body {
 }
 
 .grid-child-01  {
-    background-color: #b287a3;
+    background-color: #638475;
     height: 100%;
     width: 100%;
 }
@@ -92,12 +97,12 @@ body {
 
 .grid-child-1 > h1{
     padding-bottom: 7%;
-    color: black;
+    color: #042A2B;
     font-size: 3.3em;
 }
 
 .grid-child-1 > p   {
-    color: black;
+    color: #042A2B;
     font-size: 1.5em;
 }
 
@@ -114,7 +119,7 @@ body {
 .hoz-container  {
     width:100%;
     height: 100%;
-    background-color: #b287a3;
+    background-color: #E7D7C1;
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
     scroll-behavior: smooth;
@@ -152,6 +157,7 @@ body {
 
 .work-child-0 > a > span  {
     font-size: 5em;
+    color: #638475;
 }
 
 .work-child-0 > a:hover > span  {
@@ -168,6 +174,7 @@ body {
 
 .work-child-1 > a > span  {
     font-size: 5em;
+    color: #638475;
 }
 
 .work-child-1 > a:hover > span  {
@@ -179,7 +186,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid black;
+    border: 1px solid #042A2B;
     width: 80vw;
     height: 80vh;
     font-size: 2em;
@@ -191,7 +198,7 @@ body {
 }
 
 .work-child-content > h1 > a:visited {
-    color: black;    
+    color: #042A2B;    
 }
 
 .work-child-content > h1 > a:hover {
@@ -265,6 +272,14 @@ body {
     z-index: 1;
     transition-delay: 0ms;
   }
+
+  .carousel iframe  {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
   
   .carousel-button {
     position: absolute;
@@ -274,7 +289,7 @@ body {
     font-size: 4rem;
     top: 50%;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, .5);
+    color: #638475;
     cursor: pointer;
     border-radius: .25rem;
     padding: 0 .5rem;
@@ -283,7 +298,7 @@ body {
   
   .carousel-button:hover,
   .carousel-button:focus {
-    color: white;
+    color: orange;
     background-color: rgba(0, 0, 0, .2);
   }
   
@@ -309,26 +324,26 @@ body {
     /* border: white solid 2px; */
     height: 100vh;
     align-content: center;
-    background-color: black;
+    background-color: #042A2B;
 }
 
 .header {
-    border: white solid 1px;
-    background-color: white;
+    border: #E7D7C1 solid 1px;
+    background-color: #E7D7C1;
     display: flex;
     flex-direction: column;
 }
 
 .header a   {
-    background-color: white;
+    background-color: #E7D7C1;
     margin: auto;
     font-size: 80px;
     text-decoration: none;
-    color: black;
+    color: #042A2B;
 }
 
 .header a:visited   {
-    color: black;
+    color: #042A2B;
 }
 
 .header a:hover   {
