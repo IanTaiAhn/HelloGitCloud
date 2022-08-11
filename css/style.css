@@ -6,6 +6,7 @@
 }
 
 body {
+    margin: 0;
     height: 100vh;
     width: 100vw;
 }
@@ -77,8 +78,11 @@ body {
 }
 
 .grid-child-0 > img   {
-    max-height: 100%;
-    max-width: 100%;
+    /* max-height: 100%;
+    max-width: 100%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .grid-child-1 {
@@ -133,7 +137,13 @@ body {
     align-items: baseline;
 }
 
+.work-container > button {
+    background-color: transparent;
+    border: none;
+}
+
 .work-child-0   {
+    align-self: center;
 }
 
 .work-child-0 > a  {
@@ -141,10 +151,15 @@ body {
 }
 
 .work-child-0 > a > span  {
-    font-size: 2em;
+    font-size: 5em;
+}
+
+.work-child-0 > a:hover > span  {
+    color: orange;
 }
 
 .work-child-1   {
+    align-self: center;
 }
 
 .work-child-1 > a  {
@@ -152,16 +167,23 @@ body {
 }
 
 .work-child-1 > a > span  {
-    font-size: 2em;
+    font-size: 5em;
+}
+
+.work-child-1 > a:hover > span  {
+    color: orange;    
 }
 
 .work-child-content {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     border: 2px solid black;
     width: 80vw;
     height: 80vh;
+    font-size: 2em;
+    row-gap: 10%;
 }
 
 .work-child-content > h1 > a {
@@ -176,6 +198,13 @@ body {
     color: orange;    
 }
 
+.work-child-content > div > img {
+    /* width: 100%;
+    height: 100%; */
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+}
 /* 
  body   {
     width: 100vw;
@@ -202,6 +231,73 @@ body {
     } */
 
 
+    
+.carousel {
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+  }
+  
+  .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+  }
+  
+  .slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  
+  .carousel-button:focus {
+    outline: 1px solid black;
+  }
+  
+  .carousel-button.prev {
+    left: 1rem;
+  }
+  
+  .carousel-button.next {
+    right: 1rem;
+  }
 
 
 /* Welcome animation using grid and gsap */
