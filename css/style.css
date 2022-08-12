@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 body {
@@ -26,17 +25,13 @@ body {
 }
 
 .navbar ul li{
-    padding: 5%;
-    list-style: none;
-}
-
-.navbar ul li a{
     padding: 3%;
     list-style: none;
     text-decoration: none;
     color: #042A2B;
     font-size: 1.5em;
 }
+
 .navbar ul li a:hover{
     color: orange;
 }
@@ -44,6 +39,32 @@ body {
 .nav-flex    {
     display: flex;
     flex-direction: column;
+    row-gap: 80vh;
+}
+
+a   {
+    text-decoration: none;
+}
+
+a:visited     {
+    text-decoration: none;
+    color:#042A2B
+}
+
+a:hover {
+    color: orange;
+}
+
+.nav-flex a:visited     {
+    text-decoration: none;
+}
+
+.nav-flex-item a{
+    color: #042A2B;
+}
+
+.nav-flex-item a:hover{
+    color: orange;
 }
 
 .section-grid-1   {
@@ -73,7 +94,6 @@ body {
 
 .grid-child-01  {
     background-color: #638475;
-    height: 100%;
     width: 100%;
 }
 
@@ -83,8 +103,6 @@ body {
 }
 
 .grid-child-0 > img   {
-    /* max-height: 100%;
-    max-width: 100%; */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -101,9 +119,10 @@ body {
     font-size: 3.3em;
 }
 
-.grid-child-1 > p   {
+.grid-child-1  p   {
     color: #042A2B;
     font-size: 1.5em;
+    text-justify: auto;
 }
 
 .grid-child-2 {
@@ -206,38 +225,10 @@ body {
 }
 
 .work-child-content > div > img {
-    /* width: 100%;
-    height: 100%; */
     width: 50vw;
     height: 50vh;
     object-fit: cover;
 }
-/* 
- body   {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    background-color: blue;
-
- }
-    .container  {
-        width:100%;
-        height: 100%;
-        background-color: pink;
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
-    }
-
-    section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        scroll-snap-align: start;
-    } */
-
-
     
 .carousel {
     width: 50vw;
@@ -318,10 +309,8 @@ body {
 /* Welcome animation using grid and gsap */
 .open-grid  {
     display: grid;
-    /* gap: 2.0rem; */
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 50vh;
-    /* border: white solid 2px; */
     height: 100vh;
     align-content: center;
     background-color: #042A2B;
