@@ -125,6 +125,17 @@ a:hover {
     text-justify: auto;
 }
 
+.grid-child-1  a   {
+    color: #de394c;
+    font-size: 1.5em;
+    text-justify: auto;
+}
+.grid-child-1  a:hover   {
+    color: #0f98c1;
+    font-size: 1.5em;
+    text-justify: auto;
+}
+
 .grid-child-2 {
     grid-column: 1 / span 3;
     height: 100vh;
@@ -416,5 +427,7 @@ a:hover {
         font-size: 1em;
         text-justify: auto;
     }
+
+
   }
   /* End of media query... not bad! Pretty easy. Haha. Good job */
